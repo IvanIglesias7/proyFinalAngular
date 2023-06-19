@@ -1,0 +1,10 @@
+<h2>Lista de Artículos</h2>
+
+<ul class="list-group mt-4">
+  <li class="list-group-item" *ngFor="let articulo of articulos">
+    <h4>{{ articulo.titulo }}</h4>
+    <p>{{ articulo.descripcion }}</p>
+  </li>
+</ul>
+
+<button class="btn btn-danger mt-4" (click)="cerrarSesion()">Cerrar Sesión</button>
